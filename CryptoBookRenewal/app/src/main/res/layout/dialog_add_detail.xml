@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="600dp"
+    android:layout_marginBottom="40dp"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/round_shape_lr_wg_i_b_gra_nr">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="암호화폐 상세 추가"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/font_bold"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="암호화폐명"
+                    android:textSize="17sp"
+                    android:textColor="#333333"
+                    android:fontFamily="@font/font_medium"/>
+
+                <EditText
+                    android:id="@+id/crypto_name2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginRight="30dp"
+                    android:hint="최대 20자"
+                    android:maxLength="20"
+                    android:theme="@style/EditTextTheme"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="암호화폐 약어"
+                    android:textSize="17sp"
+                    android:textColor="#333333"
+                    android:fontFamily="@font/font_medium"/>
+
+                <EditText
+                    android:id="@+id/crypto_s_name2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:hint="최대 10자"
+                    android:maxLength="10"
+                    android:theme="@style/EditTextTheme"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/crypto_name_check2"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="암호화폐명 중복검사"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/font_medium"
+                android:background="@drawable/dialog_gradient_g"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="암호화폐 개수"
+                    android:textSize="17sp"
+                    android:textColor="#333333"
+                    android:fontFamily="@font/font_medium"/>
+
+                <EditText
+                    android:id="@+id/crypto_amount2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="30dp"
+                    android:hint="최대 9,999억개, 0 초과 값"
+                    android:maxLength="21"
+                    android:inputType="numberDecimal"
+                    android:theme="@style/EditTextTheme"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="최초 가치"
+                    android:textSize="17sp"
+                    android:textColor="#333333"
+                    android:fontFamily="@font/font_medium"/>
+
+                <EditText
+                    android:id="@+id/crypto_first_price2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginRight="30dp"
+                    android:hint="최대 9,999억원, 모르는 경우 0"
+                    android:maxLength="15"
+                    android:inputType="numberDecimal"
+                    android:theme="@style/EditTextTheme"/>
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="참여 방식"
+                android:textSize="17sp"
+                android:textColor="#333333"
+                android:fontFamily="@font/font_medium"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="40dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/part_ico2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="30dp"
+                    android:paddingLeft="15dp"
+                    android:layout_weight="1"
+                    android:buttonTint="#0F74B2"
+                    android:text="ICO 투자"
+                    android:textSize="17sp"
+                    android:textColor="#333333"
+                    android:fontFamily="@font/font_light"/>
+
+                <RadioButton
+                    android:id="@+id/part_airdrop2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="30dp"
+                    android:paddingLeft="15dp"
+                    android:layout_weight="1"
+                    android:buttonTint="#0F74B2"
+                    android:text="에어드랍, 바운티"
+                    android:textSize="17sp"
+                    android:textColor="#333333"
+                    android:fontFamily="@font/font_light"/>
+
+                <RadioButton
+                    android:id="@+id/part_invest2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="30dp"
+                    android:paddingLeft="15dp"
+                    android:layout_weight="1"
+                    android:buttonTint="#0F74B2"
+                    android:text="개인 투자"
+                    android:textSize="17sp"
+                    android:textColor="#333333"
+                    android:fontFamily="@font/font_light"/>
+            </RadioGroup>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="기반 플랫폼"
+                    android:textSize="17sp"
+                    android:textColor="#333333"
+                    android:fontFamily="@font/font_medium"/>
+
+                <EditText
+                    android:id="@+id/crypto_platform"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="30dp"
+                    android:hint="최대 20자"
+                    android:maxLength="20"
+                    android:theme="@style/EditTextTheme"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="총 발행량"
+                    android:textSize="17sp"
+                    android:textColor="#333333"
+                    android:fontFamily="@font/font_medium"/>
+
+                <EditText
+                    android:id="@+id/crypto_total_supply"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="30dp"
+                    android:hint="최대 9,999조개, 0 초과 값"
+                    android:maxLength="25"
+                    android:inputType="numberDecimal"
+                    android:theme="@style/EditTextTheme"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="컨트랙트 주소"
+                    android:textSize="17sp"
+                    android:textColor="#333333"
+                    android:fontFamily="@font/font_medium"/>
+
+                <EditText
+                    android:id="@+id/crypto_contract"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="30dp"
+                    android:hint="최대 100자"
+                    android:maxLength="100"
+                    android:theme="@style/EditTextTheme"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="자리수"
+                    android:textSize="17sp"
+                    android:textColor="#333333"
+                    android:fontFamily="@font/font_medium"/>
+
+                <EditText
+                    android:id="@+id/crypto_decimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="30dp"
+                    android:hint="0 이상 값"
+                    android:maxLength="5"
+                    android:inputType="number"
+                    android:theme="@style/EditTextTheme"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="보유 여부"
+                    android:textSize="17sp"
+                    android:textColor="#333333"
+                    android:fontFamily="@font/font_medium"/>
+
+                <CheckBox
+                    android:id="@+id/check_belonging2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="30dp"
+                    android:paddingLeft="15dp"
+                    android:buttonTint="#0F74B2"
+                    android:text="현재 보유하고 있음"
+                    android:textSize="17sp"
+                    android:textColor="#333333"
+                    android:fontFamily="@font/font_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="보유 위치"
+                    android:textSize="17sp"
+                    android:textColor="#333333"
+                    android:fontFamily="@font/font_medium"/>
+
+                <EditText
+                    android:id="@+id/crypto_belonging_loc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="30dp"
+                    android:hint="최대 1000자 (URL 주소 가능)"
+                    android:maxLength="1000"
+                    android:theme="@style/EditTextTheme"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="암호화폐 빠른 추가에 나오는 기본 내용을 제외한\n사항들은 작성하지 않아도 등록 처리됩니다."
+                android:textSize="12sp"
+                android:textColor="#939393"
+                android:fontFamily="@font/font_light"/>
+
+            <TextView
+                android:id="@+id/add_detail_register"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="35dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="등록"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/font_bold"
+                android:background="@drawable/round_shape_lr_wg_i_b_gra"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

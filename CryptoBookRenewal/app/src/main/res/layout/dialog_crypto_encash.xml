@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:layout_height="340dp"
+    android:layout_marginBottom="45dp"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/round_shape_lr_wg_i_p_gra_nr">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="암호화폐 현금화"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/font_bold"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:text="해당 암호화폐를 현금화 하셨습니까?\n\n'확인' 버튼을 누르면 현금화 통계 작업 후\n\n해당 암호화폐를 삭제합니다."
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:fontFamily="@font/font_light"/>
+
+    <TextView
+        android:id="@+id/d_button_detail_encash"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="확인"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/font_bold"
+        android:background="@drawable/round_shape_lr_wg_i_p_gra"/>
+</LinearLayout>

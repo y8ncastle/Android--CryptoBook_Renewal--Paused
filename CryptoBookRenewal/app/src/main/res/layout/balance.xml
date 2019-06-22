@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_gradient">
+
+    <LinearLayout
+        android:id="@+id/plate_balance_1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="18dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/round_shape_lr_wg">
+
+            <TextView
+                android:id="@+id/cur_selector2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="3dp"
+                android:gravity="center"
+                android:text="KRW  ▼"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/font_medium"
+                android:includeFontPadding="false"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/home_b_refresh"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/main_top_icon"
+        android:onClick="BalanceClickPack"/>
+
+    <ImageView
+        android:id="@+id/order"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/balance_order_icon"/>
+
+    <LinearLayout
+        android:id="@+id/plate_balance_2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/plate_balance_1"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_shape_lr_white_b">
+
+            <EditText
+                android:id="@+id/search_window"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="55dp"
+                android:gravity="center_vertical"
+                android:hint="암호화폐명 또는 약어"
+                android:textColorHint="#9F9FA0"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/font_light"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:textCursorDrawable="@android:color/white"
+                android:background="@null"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/balance_search_icon"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/plate_balance_3"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_below="@id/plate_balance_2"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="                               암호화폐명                     보유 개수                  가격 / 초기 대비"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/font_medium"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/plate_balance_4"
+        android:layout_below="@id/plate_balance_3">
+
+        <ListView
+            android:id="@+id/crypto_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="15dp"
+            android:divider="@null"
+            android:dividerHeight="25dp"
+            android:scrollbars="none"/>
+
+        <LinearLayout
+            android:id="@+id/empty_plate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:alpha="0.3"
+                android:src="@drawable/main_top_icon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="등록된 암호화폐가 없습니다"
+                android:textSize="19sp"
+                android:textColor="#939393"
+                android:fontFamily="@font/font_medium"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/plate_balance_4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@drawable/black_gradient">
+
+        <ImageView
+            android:id="@+id/balance_to_main"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/home_icon"
+            android:onClick="BalanceClickPack"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/balance_c_icon"/>
+
+        <ImageView
+            android:id="@+id/balance_to_statistic"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/statistic_icon"/>
+
+        <ImageView
+            android:id="@+id/balance_to_wallet"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/wallet_icon"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/balance_refresh"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_below="@id/plate_balance_2"
+        android:layout_marginTop="39dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/balance_refresh_icon"
+        android:onClick="BalanceClickPack"/>
+
+    <ImageView
+        android:id="@+id/balance_cancel"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_below="@id/plate_balance_1"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="300dp"
+        android:src="@drawable/balance_search_cancel_icon"
+        android:onClick="BalanceClickPack"/>
+</RelativeLayout>

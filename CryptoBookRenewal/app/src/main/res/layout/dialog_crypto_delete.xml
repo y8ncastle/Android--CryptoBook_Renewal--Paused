@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:layout_height="290dp"
+    android:layout_marginBottom="50dp"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/round_shape_lr_wg_i_bl_gra_nr">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="암호화폐 삭제"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/font_bold"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:text="해당 암호화폐를 삭제하시려면\n\n'확인' 버튼을 눌러주세요."
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:fontFamily="@font/font_light"/>
+
+    <TextView
+        android:id="@+id/d_button_detail_del"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="확인"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/font_bold"
+        android:background="@drawable/round_shape_lr_wg_i_bl_gra"/>
+</LinearLayout>

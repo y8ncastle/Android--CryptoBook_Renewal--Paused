@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/black_gradient">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="앱을 시작하기 전에\n\n필요한 기능을 이용 할 수 있도록\n\n접근을 허용해주세요."
+        android:textSize="22sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/font_medium"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#10FFFFFF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="110dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/wifi_icon"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="인터넷"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/font_medium"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:text="·  환율정보 및 암호화폐 시세 확인"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/font_light"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="110dp"
+        android:text="·  지갑 연동 알림 기능 제공"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/font_light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="110dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/folder_icon"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="내부 저장소"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/font_medium"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:text="·  백업 및 암호화폐 이미지 확인"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/font_light"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:gravity="center"
+        android:text="미허용시 서비스를 이용하실 수 없습니다."
+        android:textSize="13sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/font_light"/>
+
+    <LinearLayout
+        android:id="@+id/b_access"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/round_shape_white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="접근 허용"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/font_medium"/>
+    </LinearLayout>
+</LinearLayout>
